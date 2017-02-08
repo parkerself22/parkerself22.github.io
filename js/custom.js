@@ -49,20 +49,22 @@ $(document).ready(function(){
 	function loadWeather(strLoco, woeid){
 	    $.simpleWeather({
 		    location: strLoco,
-			woeid: '',
+			woeid: '2471217',
 			unit: 'f',
 			success: function(weather) {
-			html = '<h2 class="weatherHead"><i class="wi wi-yahoo-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-			html += '<ul class="weatherDetail"><li>'+weather.city+', '+weather.region+'</li>';
-			html += '<li class="currently">'+weather.currently+'</li></ul>';
 			
-			$("#weather").html(html);
-		    },
+			  html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+			  html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+			  html += '<li class="currently">'+weather.currently+'</li>';
+
+			  $("#weather").html(html);
+    		},
 			error: function(error) {
-			$("#weather").html('<p>'+error+'</p>');
-		    }
-		});
+			  $("#weather").html('<p>'+error+'</p>');
+			}
+  		});
 	}
+
 	
 	//TIME
 	function startTime() {

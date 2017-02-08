@@ -30,13 +30,13 @@ var settings = {
     },
 
     "clock": {
-	"IsMilitary": true
+	"IsMilitary": false
     },
 
     "weather": {
 	"show": true,
-	"geolocate": true,
-	"default_loco": "Hong Kong, Hong Kong"
+	"geolocate": false,
+	"default_loco": "Philadelphia, Pennsylvania"
     },
     
     "background": {
