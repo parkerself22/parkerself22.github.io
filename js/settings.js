@@ -35,17 +35,17 @@ var settings = {
 
     "weather": {
 	"show": true,
-	"geolocate": false,
+	"geolocate": true,
 	"default_loco": "Hong Kong, Hong Kong"
     },
     
     "background": {
 	"source":{
-	    "baseUrl": "https://source.unsplash.com/collection/",
-	    "dayColId":"407887",
-	    "nightColId":"407877",
-	    "dawnColId": "407882",
-	    "duskColId": "407878"
+	    "baseUrl": "",
+	    "dayColId":"http://goldwallpapers.com/uploads/posts/philadelphia-skyline-wallpaper/philadelphia_skyline_wallpaper_027.jpg",
+	    "nightColId":"https://s-media-cache-ak0.pinimg.com/originals/47/d9/4b/47d94b87b7da7d27ae8b8cd67c2d7cfc.jpg",
+	    "dawnColId": "http://www.wallpaperup.com/uploads/wallpapers/2013/01/29/32028/big_thumb_79d29b007ca8298c6886b7b6274500c1.jpg",
+	    "duskColId": "http://eskipaper.com/images/philadelphia-4.jpg"
 	},
 	"daily": false
 	//\_ should background picture in each collection be only updated once per day?
