@@ -50,7 +50,7 @@ $(document).ready(function(){
 	    $.simpleWeather({
 		    location: strLoco,
 			woeid: '',
-			unit: 'c',
+			unit: 'f',
 			success: function(weather) {
 			html = '<h2 class="weatherHead"><i class="wi wi-yahoo-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
 			html += '<ul class="weatherDetail"><li>'+weather.city+', '+weather.region+'</li>';

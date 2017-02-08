@@ -8,7 +8,7 @@ iam [at] johnho.ca
 var settings = {
     "links_path" : "links.txt",
     
-    "title" : "&#2384 Here & Now",
+    "title" : "Bridgeview Living",
     //\_ Page's title: enter your personal mantra
 
     "navigation": {
