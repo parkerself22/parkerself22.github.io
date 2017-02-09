@@ -83,15 +83,21 @@ a:active{
 	text-align:center;
 	text-transform:uppercase;
 }
-#time{
-	font-size:4em;
-	margin-top:5px;
+
+#time {
+    font-size: 65px;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-family: 'Jura', sans-serif;
+    color: rgba(0, 0, 0, 0.84)
+}
+#time-div{
 }
 #time p{
 	font-size:25%;
-	position:relative;
-	bottom: 0.1em;
-	float: right;
+    display: inline;
+    vertical-align: middle;
+    padding-bottom: 10px;
 }
 #time span{
 	animation: blink 4s linear infinite;
@@ -134,22 +140,28 @@ a:active{
 	}
 }
 #day{
-	float:left;
-	font-size:0.8em;
-/*	font-weight:bold;*/
-	text-align:left;
+    font-size: 40px;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.84);
 }
 #date{
-	text-align:right;
-	font-size:0.8em;
+    font-size: 24px;
+    font-family: 'Jura', sans-serif;
+    text-align: right;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.84)
 }
 
 /* WEATHER WIDGET STYLES*/
-#weather{
+/*#weather{
 	margin:auto;
 	width:200px;
 	margin-top: 10px;
-}
+}*/
 #weather .weatherHead{
 	float:left;
 	width:80px;
@@ -286,12 +298,9 @@ body {
 }
 
 #weather {
-    margin: 20px 10px;
-    width: 70%;
+    padding: 10px 0 10px 15px;
+    width: 100%;
     text-align: center;
-    text-transform: uppercase;
-    background-color:rgba(109, 109, 109, 0.6);
-    border-radius:10px;
     height:120%;
     font-family:sans-serif
 }
@@ -343,14 +352,66 @@ div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather p time::c
     position: fixed;
     width:100%;
 }
+.stick-bottom {
+    bottom: 65px;
+    position: fixed;
+    width:100%;
+}
 
 #wsj-col {
-    margin-left: 15px;
-    padding-right:15px;
+    padding-left:15px;
 }
+#sports-col {
+    padding-right:0;
+}
+
 #wsj-div {
-    width: 85%;
+    width: 100%;
 }
 div.fw-feed-item {
     padding:5px !important;
+}
+#map {
+    width: 100%;
+}
+#map-col {
+    text-align: right;
+}
+#map-iframe {
+    width: 100%;
+    padding: 10px 15px 10px 0;
+    min-height: 200px;
+    height: 100%;
+}
+#philly-sports-div {
+    width: 100%;
+    padding-left: 15px;
+}
+#feeds-traffic-row {
+    padding-left: 15px;
+    text-align: center;
+}
+.fw-iframe {
+    height:330px !important;
+    opacity: .9;
+}
+
+#quote {
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    opacity: .5;
+    color: #273240 !important;
+    padding: 10px 10px;
+
+}
+#quote b {
+    display:none;
+}
+#quote a {
+    color: #273240 !important;
+
+}
+#quote-col {
+    padding: 10px 10%;
 }

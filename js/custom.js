@@ -48,16 +48,19 @@ $(document).ready(function(){
 		
 		m = checkTime(m);
 		h = checkTime(h);
-		s = checkTime(s);
+		s = "";
 		
-		/*if(!settings.clock.IsMilitary){
-		    s = today.getHours()>12? s+'<p>pm</p>' : s+'<p>AM</p>';
+		if(!settings.clock.IsMilitary){
+		    s = today.getHours()>12? s+' PM' : s+' AM';
 		    h = h>12? parseInt(h)-12: h ;
+		    if(h == 0) {
+		    	h = 12;
+			}
 		    
-		    $('#time').css('font-size','3em');
-		}*/
+		    $('#time').css('font-size','64px');
+		}
 
-		$('#time').html(h +'<span>:</span>'+ m +'<span>:</span>'+ s);
+		$('#time').html(h +'<span>:</span>'+ m + '<p style="font-size:32px; text-align: left">' + s + '</p>');
 		//$('#time').html(h+'<span>:</span>'+m);
 		$('#day').html(days[today.getDay()]+'day');
 		$('#date').html(months[today.getMonth()]+' '+today.getDate()+', '+today.getFullYear());
@@ -193,21 +196,28 @@ $(document).ready(function(){
 //use for any widgets that may take a while to load
 $(window).on('load', function() {
     var checkExist = setInterval(function() {
-        if ($('a.aw-current-weather p time').length) {
+        if ($('a.aw-current-weather p time').length && $('.aw-widget-content').length) {
             console.log("Exists!");
             $('a.aw-current-weather p time').html('');
+            $('.aw-widget-content').css('cssText', 'border:none !important');
+            $('.aw-current-weather-inner').css('cssText', 'font-family: "Jura", sans-serif !important');
+            $('div.aw-widget-content a.aw-current-weather h3').css('cssText', 'font-size:20px !important');
+            $('a.aw-current-weather p span.aw-weather-description').css('cssText', 'font-size: 20px!important; padding-right: 20px !important;text-align: right !important');
+            $('a.aw-current-weather p.aw-temp-time-desc').css('cssText', 'width: 100%!important;');
+            $('a.aw-current-weather span.aw-temperature-today').css('cssText', 'font-size: 55px!important; text-align: right !important');
+
             clearInterval(checkExist);
         }
     }, 100);
 });
 
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: {lat: 39.9610, lng: -75.2132}
-    });
+/*function initMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.2),
+        zoom: 10
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}*/
 
-    var trafficLayer = new google.maps.TrafficLayer();
-    trafficLayer.setMap(map);
-}
 
