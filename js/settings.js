@@ -34,7 +34,7 @@ var settings = {
     },
 
     "weather": {
-	"show": true,
+	"show": false,
 	"geolocate": false,
 	"default_loco": "Philadelphia, Pennsylvania"
     },

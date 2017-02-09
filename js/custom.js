@@ -34,36 +34,7 @@ $(document).ready(function(){
 		'background-repeat':'no-repeat',
 		'background-size': 'cover'
 	});
-	
-   	//WEATHER
-	var bolShowWeather= settings.weather.show;
-	var bolGeoLocate= settings.weather.geolocate;
-	var strLoco = settings.weather.default_loco;
-	if (navigator.geolocation && bolShowWeather && bolGeoLocate ){
-	    navigator.geolocation.getCurrentPosition(function(position){
-		    loadWeather( position.coords.latitude + ',' + position.coords.longitude);
-		});
-	}else if( bolShowWeather){
-	    loadWeather(strLoco);
-	}
-	function loadWeather(strLoco, woeid){
-	    $.simpleWeather({
-		    location: strLoco,
-			woeid: '2471217',
-			unit: 'f',
-			success: function(weather) {
-			
-			  html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-			  html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
-			  html += '<li class="currently">'+weather.currently+'</li>';
 
-			  $("#weather").html(html);
-    		},
-			error: function(error) {
-			  $("#weather").html('<p>'+error+'</p>');
-			}
-  		});
-	}
 
 	
 	//TIME
@@ -79,12 +50,12 @@ $(document).ready(function(){
 		h = checkTime(h);
 		s = checkTime(s);
 		
-		if(!settings.clock.IsMilitary){
+		/*if(!settings.clock.IsMilitary){
 		    s = today.getHours()>12? s+'<p>pm</p>' : s+'<p>AM</p>';
 		    h = h>12? parseInt(h)-12: h ;
 		    
 		    $('#time').css('font-size','3em');
-		}
+		}*/
 
 		$('#time').html(h +'<span>:</span>'+ m +'<span>:</span>'+ s);
 		//$('#time').html(h+'<span>:</span>'+m);
@@ -101,6 +72,7 @@ $(document).ready(function(){
 	
 	$('#time').html(startTime());
 	
+	/**
 	//SEARCH
 	
 	// print it first then mess with it
@@ -200,10 +172,10 @@ $(document).ready(function(){
 	    // override search engine click
 	    deactivateSearchClick();
 	}
+	setupSearch();*/
 
-	setupSearch();
 
-	// USER CONFIG FONTS
+    // USER CONFIG FONTS
 	function styleFonts(){
 	    var strBodyFont= settings.fonts.body;
 	    var strLinksFont= settings.fonts.links;
@@ -215,4 +187,27 @@ $(document).ready(function(){
 	
 	// PAGE TITLE
 	$('title').html(settings.title);
+
 });
+
+//use for any widgets that may take a while to load
+$(window).on('load', function() {
+    var checkExist = setInterval(function() {
+        if ($('a.aw-current-weather p time').length) {
+            console.log("Exists!");
+            $('a.aw-current-weather p time').html('');
+            clearInterval(checkExist);
+        }
+    }, 100);
+});
+
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: {lat: 39.9610, lng: -75.2132}
+    });
+
+    var trafficLayer = new google.maps.TrafficLayer();
+    trafficLayer.setMap(map);
+}
+

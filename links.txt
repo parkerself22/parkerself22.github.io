@@ -20,3 +20,5 @@ https://soundcloud.com/ohjho || HeyHo Radio!
 https://github.com/traderjohn || GitHub Repository
 https://flipboard.com/@jho85 || JHO on Flipboard
 https://giphy.com/channel/yogi_cinemagrapher || Yogi Cinemagrapher
+
+google api key: AIzaSyBisBespdzAa06xYWS-iac9785kRc3V4ic;
