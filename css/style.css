@@ -85,7 +85,7 @@ a:active{
 }
 
 #time {
-    font-size: 65px;
+    font-size: 100px;
     margin-top: 20px;
     padding-left: 10px;
     font-family: 'Jura', sans-serif;
@@ -140,7 +140,7 @@ a:active{
 	}
 }
 #day{
-    font-size: 40px;
+    font-size: 80px;
     font-family: 'Jura', sans-serif;
     font-weight: bold;
     text-align: right;
@@ -148,14 +148,14 @@ a:active{
     padding-right: 20px;
     color: rgba(0, 0, 0, 0.84);
 }
-#date{
-    font-size: 24px;
-    font-family: 'Jura', sans-serif;
-    text-align: right;
-    padding-right: 20px;
-    color: rgba(0, 0, 0, 0.84)
+#date {
+	font-size: 40px;
+	font-family: 'Jura', sans-serif;
+	text-align: right;
+	padding-right: 20px;
+	color: rgba(0, 0, 0, 0.84);
+	padding-top: 10px;
 }
-
 /* WEATHER WIDGET STYLES*/
 /*#weather{
 	margin:auto;
