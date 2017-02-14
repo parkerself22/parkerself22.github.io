@@ -57,7 +57,7 @@ $(document).ready(function(){
 		    	h = 12;
 			}
 		    
-		    $('#time').css('font-size','64px');
+		    $('#time').css('font-size','100px');
 		}
 
 		$('#time').html(h +'<span>:</span>'+ m + '<p style="font-size:32px; text-align: left">' + s + '</p>');
