@@ -353,7 +353,7 @@ div.aw-widget-current-inner div.aw-widget-content a.aw-current-weather p time::c
     width:100%;
 }
 .stick-bottom {
-    bottom: 65px;
+    top: 50%;
     position: fixed;
     width:100%;
 }
@@ -393,7 +393,7 @@ div.fw-feed-item {
     text-align: center;
 }
 .fw-iframe {
-    height:330px !important;
+	height: 600px !important;
     opacity: .9;
 }
 
@@ -405,7 +405,7 @@ div.fw-feed-item {
     color: #273240 !important;
     padding: 20px;
 	font-family: 'Jura', sans-serif;
-	font-size: 22px;
+	font-size: 42px;
 	font-weight:bold;
 }
 #quote b {
@@ -416,7 +416,7 @@ div.fw-feed-item {
 	font-weight:normal;
 	padding-top: 10px;
 	position: fixed;
-	font-size:18px;
+	font-size:22px;
 }
 #quote-col {
     padding: 10px 10%;
