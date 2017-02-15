@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="147d9e52-6a5e-41c2-a5be-68b2594f029a" name="Default" comment="" />
+    <list default="true" id="147d9e52-6a5e-41c2-a5be-68b2594f029a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/espn.html" afterPath="$PROJECT_DIR$/espn.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +77,8 @@
       <file leaf-file-name="espn.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/espn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3903">
-              <caret line="146" column="52" lean-forward="false" selection-start-line="146" selection-start-column="52" selection-end-line="146" selection-end-column="52" />
+            <state relative-caret-position="288">
+              <caret line="337" column="7" lean-forward="true" selection-start-line="337" selection-start-column="7" selection-end-line="337" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -288,12 +291,12 @@
       <workItem from="1487043169316" duration="1179000" />
       <workItem from="1487045254232" duration="598000" />
       <workItem from="1487098180424" duration="21000" />
-      <workItem from="1487119553318" duration="1951000" />
+      <workItem from="1487119553318" duration="2081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8899000" />
+    <option name="totallyTimeSpent" value="9029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="147" y="22" width="1117" height="774" extended-state="0" />
@@ -527,8 +530,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/espn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3903">
-          <caret line="146" column="52" lean-forward="false" selection-start-line="146" selection-start-column="52" selection-end-line="146" selection-end-column="52" />
+        <state relative-caret-position="288">
+          <caret line="337" column="7" lean-forward="true" selection-start-line="337" selection-start-column="7" selection-end-line="337" selection-end-column="7" />
           <folding />
         </state>
       </provider>
