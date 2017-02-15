@@ -427,7 +427,5 @@ div.fw-feed-item {
 #quote::before {
 	content:""";
 }
-#scoreboard body {
-	zoom:2;
-}
+
 
