@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="147d9e52-6a5e-41c2-a5be-68b2594f029a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/espn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="147d9e52-6a5e-41c2-a5be-68b2594f029a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1320">
@@ -71,6 +67,16 @@
                 <element signature="n#style#0;n#h2#0;n#div#2;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#1;n#div#2;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="espn.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/espn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3903">
+              <caret line="146" column="52" lean-forward="false" selection-start-line="146" selection-start-column="52" selection-end-line="146" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,6 +114,7 @@
         <option value="$PROJECT_DIR$/js/custom.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/espn.html" />
       </list>
     </option>
   </component>
@@ -281,16 +288,16 @@
       <workItem from="1487043169316" duration="1179000" />
       <workItem from="1487045254232" duration="598000" />
       <workItem from="1487098180424" duration="21000" />
-      <workItem from="1487119553318" duration="1766000" />
+      <workItem from="1487119553318" duration="1951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8714000" />
+    <option name="totallyTimeSpent" value="8899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="147" y="22" width="1117" height="774" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24744186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -515,6 +522,14 @@
             <element signature="n#style#0;n#h2#0;n#div#2;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#1;n#div#2;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/espn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3903">
+          <caret line="146" column="52" lean-forward="false" selection-start-line="146" selection-start-column="52" selection-end-line="146" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
